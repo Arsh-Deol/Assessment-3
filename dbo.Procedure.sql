@@ -1,0 +1,6 @@
+﻿CREATE PROCEDURE [dbo].[GetAllData]
+	@ID int
+AS
+	SET NOCOUNT ON;
+		SELECT * FROM Movies WHERE MovieID = @ID
+	GO
